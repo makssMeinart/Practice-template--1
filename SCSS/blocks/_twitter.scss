@@ -1,0 +1,39 @@
+.twitter {
+   background-color: #272727;
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   margin-bottom: 6.875rem;
+
+   .scroll-wrapper {
+      margin-bottom: 0;
+   }
+
+   // Gray Bird
+   &::before {
+      content: "";
+      position: absolute;
+      width: 183px;
+      height: 202px;
+      left: 29px;
+      bottom: 0;
+      background-image: url(/Images/back-ground/twitter--gray.png);
+   }
+}
+
+.twitter-content {
+   width: 45%;
+   padding: 100px 0;
+
+   &__img {
+      padding-bottom: 26px;
+      line-height: 0;
+   }
+
+   &__body {
+      color: $white-col;
+   }
+}

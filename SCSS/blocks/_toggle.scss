@@ -1,0 +1,118 @@
+.toggle-wrapper {}
+
+.toggle-item {
+   border: 1px solid #e7e7e7;
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+
+   .toggle-item-inner {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      pointer-events: none;
+   }
+
+   &:hover {
+      .toggle-item__title {
+         color: $accent-col;
+      }
+
+      .toggle-item__btn {
+         .toggle-item__btn-circle {
+            border-color: $accent-col;
+         }
+
+         .btn-line {
+            background-color: $accent-col;
+         }
+
+      }
+   }
+
+   .toggle-item__btn {
+      width: 60px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #e7e7e7;
+
+      .toggle-item__btn-circle {
+         width: 18px;
+         height: 18px;
+         border-radius: 50%;
+         border: 1px solid#505050;
+         position: relative;
+         transition: .1s border-color linear;
+      }
+
+      .btn-line {
+         position: absolute;
+         background-color: #505050;
+         top: 50%;
+         right: 50%;
+         transform: translate(50%, -50%);
+         transition: .1s background-color linear;
+      }
+
+      .line--1 {
+         width: 10px;
+         height: 2px;
+      }
+
+      .line--2 {
+         height: 10px;
+         width: 2px;
+      }
+   }
+}
+
+// Item padding bottom
+.toggle-item:not(last-child) {
+   margin-bottom: 9px;
+}
+
+.toggle-item__title {
+   padding-left: 1.875rem;
+   font-size: 20px;
+   font-weight: 500;
+   color: #262626;
+   transition: .1s color linear;
+}
+
+.toggle-item__dropdown {
+   display: none;
+   padding: 16px;
+
+   &-body {
+      font-size: 0.875rem;
+   }
+}
+
+.toggle-item.active {
+
+   .toggle-item__dropdown {
+      display: block;
+   }
+   .toggle-item-inner {
+      border-bottom: 1px solid #e7e7e7;
+   }
+
+   .line--2 {
+      display: none;
+   }
+
+   .toggle-item__title {
+      color: $accent-col;
+   }
+
+   .toggle-item__btn-circle {
+      border-color: $accent-col;
+   }
+
+   .btn-line {
+      background-color: $accent-col;
+   }
+
+}

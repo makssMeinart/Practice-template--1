@@ -1,0 +1,72 @@
+.feedback {
+   margin-right: 30px;
+   text-align: center;
+   min-width: 47%;
+}
+
+.feedback-item {
+
+   &__title {
+      color: $white-col;
+      text-transform: uppercase;
+      margin-bottom: 49px;
+   }
+
+   &__body {
+      color: #a4a4a4;
+      margin-bottom: 47px;
+   }
+
+   &__person {
+      display: flex;
+      flex-direction: column;
+      line-height: .9;
+
+      &-name {
+         padding-bottom: 27px;
+      }
+
+   }
+
+   &__person-name {
+      text-transform: uppercase;
+      color: $accent-col;
+      font-weight: 700;
+      margin: 0;
+   }
+}
+
+.feedback-item__person-img {
+   line-height: 0;
+   margin-bottom: 17px;
+
+   img {
+      display: inline-block;
+   }
+}
+
+// Btns
+.feedback-btns {
+   line-height: 0;
+   display: inline-block;
+   display: flex;
+   justify-content: center;
+}
+
+.feedback-btn {
+   height: 8px;
+   width: 8px;
+   padding: 0;
+   background-color: $white-col;
+   border: none;
+   outline: none;
+   cursor: pointer;
+
+   &:not(:last-child) {
+      margin-right: 5px;
+   }
+}
+
+.feedback-btn.active {
+   background-color: $accent-col;
+}

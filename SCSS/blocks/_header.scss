@@ -1,0 +1,54 @@
+header {
+   height: 70px;
+   background-color: #000000;
+   overflow-y: visible;
+
+   .container {
+      height: 100%;
+      overflow-y: visible;
+   }
+}
+
+.menu {
+   height: 100%;
+   display: flex;
+   overflow-y: visible;
+}
+
+.menu-list {
+   display: flex;
+   list-style-type: none;
+   flex-grow: 1;
+   justify-content: space-between;
+   padding-left: 6.125rem;
+
+
+   &__link {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      text-decoration: none;
+      color: #a4a4a4;
+      text-transform: uppercase;
+      font-size: 1.125rem;
+      letter-spacing: 0.07px;
+      font-family: 'Raleway', sans-serif;
+      position: relative;
+         
+      &:hover {
+         color: $white-col;
+
+         &::before {
+            content: "";
+            position: absolute;
+            right: 50%;
+            height: 100%;
+            width: 50%;
+            transform: translateX(50%);
+            border-top: 2px solid $accent-col;
+            border-bottom: 2px solid $accent-col;
+         }
+      }
+
+   }
+}

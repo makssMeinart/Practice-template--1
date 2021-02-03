@@ -1,0 +1,51 @@
+// Header 
+.header-block {
+   text-align: center;
+   margin: 6.25rem 0;
+}
+
+.header {
+   font-size: 1.875rem;
+   font-weight: 700;
+   color: $white-col;
+   font-family: 'Raleway', sans-serif;
+   margin-bottom: 3.0625rem;
+   text-align: center;
+
+   span {
+      color: $accent-col;
+   }
+}
+
+
+.header--dark {
+   @extend .header;
+
+   color: $dark-blue-col;
+}
+
+// Subtitle 
+.subtitle {
+   font-size: 1rem;
+   line-height: 22px;
+   font-weight: 700;
+   color: $gray-dark-col;
+   font-family: 'Lato', sans-serif;
+   text-align: center;
+
+   span {
+      color: $accent-col;
+   }
+
+}
+
+.subtitle--light {
+   text-align: center;
+
+   color: #a4a4a4;
+   
+   span {
+      color: $accent-col;
+   }
+   
+}

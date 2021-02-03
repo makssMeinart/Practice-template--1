@@ -1,0 +1,102 @@
+.location {
+   .header {
+      padding-bottom: 97px;
+      margin: 0;
+   }
+
+   .subtitle {
+      font-family: 'Lato', sans-serif;
+      padding-bottom: 97px;
+   }
+}
+
+.location-map {
+   min-height: 575px;
+   background-image: url(/Images/back-ground/map.png);
+   background-position: center;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+
+.location-map__content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20%;
+}
+
+// Location Place - Location Tab
+.location-map-location {
+   min-height: 226px;
+   max-width: 300px;
+   background-image: url(/Images/back-ground/message.png);
+   background-repeat: no-repeat;
+   padding: 26px 86px 55px 24px;
+
+   &-text {
+      color: $white-col;
+      line-height: 25px;
+   }
+}
+
+// Location Form
+.location-map__form {
+   box-shadow: 0 0 9px rgba(5, 5, 6, 0.17);
+   background-color: #ffffff;
+   padding: 50px 48px 47px 43px;
+   width: fit-content;
+
+   &-title {
+      color: #262626;
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 500;
+      padding-bottom: 50px;
+   }
+
+   form {
+      max-width: 379px;
+      text-align: right;
+   }
+
+   // Input Items
+   &-item {
+      width: 100%;
+      margin-bottom: 16px;
+      border: 1px solid #e7e7e7;
+      color: black;
+      line-height: 0;
+      padding: 7.5px 14px 7.5px 15px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+
+      &::placeholder {
+         color: #505050;
+         font-weight: 400;
+         font-size: 16px;
+         font-family: 'Lato', sans-serif;
+      }
+   }
+
+   textarea {
+      width: 100%;
+      min-height: 88px;
+      resize: none;
+      border: 1px solid #e7e7e7;
+      margin-bottom: 35px;
+   }
+}
+
+.form-btn {
+   color: $white-col;
+   padding: 15px 30px 14px 30px;
+   background-color: #262626;
+   text-transform: uppercase;
+   text-decoration: none;
+}

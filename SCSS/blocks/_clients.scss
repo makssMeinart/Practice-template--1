@@ -1,0 +1,57 @@
+.clients {
+   position: relative;
+   z-index: 5;
+
+   .header {
+      padding-top: 94px;
+   }
+
+   .subtitle--light {
+      padding-bottom: 6.25rem;
+   }
+
+   &-content {
+      padding-bottom: 6.25rem;
+   }
+}
+.clients-bg {
+   height: 100%;
+   width: 100%;
+   background-color: #000000;
+   opacity: .9;
+   position: absolute;
+   z-index: -1;
+}
+
+.clients-content {
+   display: flex;
+}
+
+
+// Clients Partner 
+.clients-partners {
+   display: grid;
+   grid-template-columns: 270px 270px;
+   grid-template-rows: 116px 116px;
+   column-gap: 30px;
+   row-gap: 39px;
+}
+
+.clients-partners__item {
+   background-image: url(/Images/back-ground/clients-block--bg.png);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   span {
+      display: flex;
+      align-items: center;
+
+   }
+
+   &-title {
+      color: #292626;
+      font-size: 24px;
+      line-height: 29.6px;
+   }
+}

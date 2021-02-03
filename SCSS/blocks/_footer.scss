@@ -1,0 +1,23 @@
+.footer {
+   height: 79px;
+   background-color: #262626;
+   display: flex;
+   justify-content: flex-end;
+
+   &-logo {
+      line-height: 0;
+   }
+
+   &-cred {
+      color: #8e8e8e;
+      padding-right: 45px;
+   }
+}
+
+.footer-wrapper {
+   height: 100%;
+   width: 55%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
